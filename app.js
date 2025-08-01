@@ -36,10 +36,10 @@ function checkwin(){
     if(boxes[a].innerHTML != "" && boxes[a].innerHTML === boxes[b].innerHTML && boxes[a].innerHTML === boxes[c].innerHTML ){
         result.innerHTML = turn + " Won this round" 
         if(turn == "X"){    
-                image.src = "/Images/angry face.png";       //when player win change face
+                image.src = "./Images/angry-face.png";       //when player win change face
                 message.innerHTML = "Let's Play Again";     //change message 
             }else{
-                image.src = "/Images/happy face.png";
+                image.src = "./Images/happy-face.png";
                 message.innerHTML = "That was easy";
             }
             isgameover=true;    
@@ -94,7 +94,7 @@ replay_button.addEventListener("click", ()=>{
     document.querySelector(".bg").style.left = '0px';
     document.querySelector(".bg").style.backgroundColor ="#FF2E63";
     result.innerHTML = "";
-    image.src = "/Images/neutral face.png";
+    image.src = "./Images/neutral-face.png";
     message.innerHTML = "Hello Player";
 
     boxes.forEach(e =>{
